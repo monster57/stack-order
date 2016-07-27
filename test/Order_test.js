@@ -6,6 +6,10 @@ describe('Order', function() {
 
     afterEach(function() {
        delete order;
+       delete companyName;
+       delete stockId;
+       delete quantity;
+       delete order;
     });
 
   	before(function() {
