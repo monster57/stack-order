@@ -1,8 +1,8 @@
 var assert = require('chai').assert;
-var Order = require('../app/Order')
+var Order = require('../app/Order');
 
 
-describe('test', function() {
+describe('Order', function() {
 
     afterEach(function() {
        delete order;
@@ -18,7 +18,6 @@ describe('test', function() {
 
 
 
-    describe('order', function(){
     	it('should give the stockId ', function () {
 	      assert.equal(this.order.getStockId() , this.stockId);
 	    });
@@ -34,5 +33,4 @@ describe('test', function() {
 	    it('should give the quantity of item ', function () {
 	      assert.equal(this.order.getQuantity() , this.quantity);
 	    });
-    })
 });
