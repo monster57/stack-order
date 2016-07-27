@@ -9,7 +9,7 @@ describe('Order', function() {
        delete companyName;
        delete stockId;
        delete quantity;
-       delete order;
+       delete side;
     });
 
   	before(function() {
