@@ -38,5 +38,12 @@ describe('OrderContainer', function() {
 	        this.order = new Order(this.stockId, this.side, this.companyName, this.quantity);
     		this.orderContainer = new OrderContainer();
     	});
+
+    	it('should give the container length more than zero after adding order', function(){
+    		assert.deepEqual(this.orderContainer.getContainer().length , 0);
+    		this.orderContainer.addOrder(this.order);
+    		assert.deepEqual(this.orderContainer.getContainer().length , 1);
+    	})
+
     })
 });
